@@ -2,19 +2,9 @@ language: c
 sudo: required
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-travisci-skeleton/master/.travis-opam.sh
 script: bash -ex .travis-opam.sh
+script: bash -ex .travis-ci.sh
 env:
-  - OCAML_VERSION=3.12
-  - OCAML_VERSION=4.00
-  - OCAML_VERSION=4.01
   - OCAML_VERSION=4.02
 os:
   - linux
   - osx
-install:
-  opam init --no-setup
-  opam update
-  opam pin add --yes --no-action .
-  opam install --deps-only infer
-  opam config exec -- ./autogen.sh
-  opam config exec -- ./configure
-  opam config exec -- make java
