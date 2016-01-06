@@ -147,7 +147,7 @@ pre-compiled here:
    ]
   )
 
-  AC_CHECK_HEADERS([fcntl.h inttypes.h limits.h locale.h malloc.h stddef.h stdint.h stdlib.h string.h sys/mount.h sys/param.h sys/socket.h sys/statfs.h sys/time.h unistd.h wchar.h wctype.h])
+  AC_CHECK_HEADERS([fcntl.h inttypes.h limits.h locale.h stddef.h stdint.h stdlib.h string.h sys/mount.h sys/param.h sys/socket.h sys/statfs.h sys/time.h unistd.h wchar.h wctype.h])
 fi
 # end if($enable_c_analyzers)
 
